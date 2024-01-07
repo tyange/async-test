@@ -18,7 +18,7 @@ it("should generate a token value", (done) => {
 it("should generate a token value", () => {
   const testUserEmail = "test@test.com";
 
-  expect(generateTokenPromise(testUserEmail)).resolves.toBeDefined();
+  return expect(generateTokenPromise(testUserEmail)).resolves.toBeDefined();
 });
 
 // alternative way of testing Promise using async-await
